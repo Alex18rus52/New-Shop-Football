@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/1.css">
+</head>
+
+<body>
+    <!--Добавить гамбургер-->
+    <!--Главный сайт-->
+    <!--Шапка-->
+    <menu>
+        <nav class="navbar navbar-expand-lg bg-body-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/small-logo.png" alt="Bootstrap" width="56" height="52"></a>
+                <a class="navbar-brand" href="./index.html">
+                    <h1>Football Shop</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" aria-current="page" href="./index.html">Главная</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./shop.html">Магазин</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                О нас
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Блог</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                            </ul>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./bin.html">Корзина</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                        <button class="btn btn-outline-dark" type="submit">Поиск</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <header>
+        <div class="container-fluid">
+            <!--Карусель-->
+            <div class="row align-items-center mt-3">
+                <div class="col">
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="./barcafoot.html"><img src="./img/FCB.png" class="d-block w-100" alt="..."></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Докажи свою верность клубу</h5>
+                                    <p>Форма Барселоны сезона 2024/25 уже в продаже</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="./realfoot.html"><img src="./img/Real.png" class="d-block w-100" alt="..."></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Стань частью нового галактикос</h5>
+                                    <p>Форма Реала сезона 2024/25 уже в продаже</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="./mu.html"><img src="./img/man-united-1-min.jpg" class="d-block w-100"
+                                        alt="..."></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Поддержи свой клуб в трудные времена</h5>
+                                    <p>Форма Манчестер Юнайтед сезона 2024/25 уже в продаже</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Конец карусели-->
+        </div>
+    </header>
+    <main>
+        <!--Категории-->
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col gy-5">
+                    <div class="subtext">
+                        <h1>Категории</h1>
+                    </div>
+                    <div class="row gy-3 row-cols-1 row-cols-md-4 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <a href="./shop.html"><img src="./img/Categories/form.jpg" class="card-img-top"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Комплекты форм</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="./shop.html"><img src="./img/Categories/costume.jpg" class="card-img-top"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Костюмы</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="./shop.html"><img src="./img/Categories/Hoody.jpg" class="card-img-top"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Толстовки</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="./shop.html"><img src="./img/Categories/shorts.jpg" class="card-img-top"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Шорты</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Аккордион-->
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col gy-4">
+                    <div class="subtext">
+                        <h1>Почему именно мы</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h5>Экипировка в Football shop</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Игровая форма и атрибутика любимой команды — важное составляющее
+                            гардероба игрока и просто любителя футбола. Быть в форме любимой команды — быть её частью.
+                            Интернет-магазин Аутлет Футбол предлагает большой выбор экипировки с символикой популярных
+                            футбольных клубов. Качественная спортивная экипировка может стать памятным сувениром или
+                            основной формой для игры.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5>Экипировка по доступной цене</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">В интернет-магазине представлена качественная футбольная экипировка
+                            известных футбольных клубов для взрослых и детей по низкой цене. В Аутлет Футбол можно
+                            заказать футболку и шорты Лионеля Месси, Криштиану Роналду или Килиана Мбаппе с нанесением
+                            оригинального шрифта.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <h5>Нанесение фамилии и номера</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Нанесение оригинального шрифта станет отличным подарком как для
+                            простого болельщика, так и для действующего игрока. Специалисты интернет-магазина нанесут
+                            фамилию и номер игрока оригинальным шрифтом. При оформлении заказа следует указать фамилию и
+                            номер игрока в соответствующей строке на странице товара. Индивидуально настроенная
+                            экипировка понравится взрослым и детям.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Нижняя плажка-->
+    <footer class="bg-body-dark text-center">
+        <div class="container p-4">
+            <section class="mb-4">
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i><img src="./img/smallvk/vk (2).png" alt=""></a>
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i><img src="./img/smallvk/telegram (2).png" alt=""></a>
+                <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i><img src="./img/smallvk/instagram (2).png" alt=""></a>
+            </section>
+            <!--Текст для подписи-->
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum
+                    harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!--Вспомогательные колонки-->
+            <section class="footer-colums">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Покупателям</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a class="text-body" href="#!">Отправленные заказы</a>
+                            </li>
+                            <li>
+                                <a class="text-body" href="#!">Видеообзоры</a>
+                            </li>
+                            <li>
+                                <a class="text-body" href="#!">Таблица размеров</a>
+                            </li>
+                            <li>
+                                <a class="text-body" href="#!">Доставка и оплата</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Вторая колонка-->
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">О магазине</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a class="text-body" href="#!">Отзывы</a>
+                            </li>
+                            <li>
+                                <a class="text-body" href="#!">Поддержка в WhatsApp</a>
+                            </li>
+                            <li>
+                                <a class="text-body" href="#!">Поддержка в Telegram</a>
+                            </li>
+                            <li>
+                                <a class="text-body" href="#!">Наша команда</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Третья колонка-->
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Сотрудничество</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a class="text-body" href="#!">Форма для команд</a>
+                            </li>
+                            <li>
+                                <a class="text-body" href="#!">Контакты</a>
+                            </li>
+                            <li>
+                                <a class="text-body" href="#!">Опыт cотрудничества</a>
+                            </li>
+                            <li>
+                                <a class="text-body" href="#!">Персональные скидки</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Copyright:
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
